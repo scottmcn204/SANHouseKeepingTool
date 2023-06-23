@@ -28,7 +28,6 @@ public class App {
                         break;
                         case 3: port.portNameB = cell.getStringCellValue();
                     }
-                    port.portInt = Integer.parseInt(port.portA.replaceAll("[^0-9]", ""));
                 } 
                 if (port.portNameA != null){
                     if(port.isRed()){

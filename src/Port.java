@@ -3,7 +3,6 @@ public class Port {
     public String portNameA;
     public String portB;
     public String portNameB;
-    public Integer portInt;
 
     public boolean isOrange(){
         if(portNameA.contains("Disabled") || portNameA.contains("disabled") 
