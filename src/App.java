@@ -60,5 +60,6 @@ public class App {
                 + "\t" + yellows.get(i).portB + "\t" + yellows.get(i).portNameB);
         }
         System.out.println("--------------------------------------------------------------------------------------");
+        workbook.close();
     }  
 }  

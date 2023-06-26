@@ -18,7 +18,7 @@ public class Port {
         if(differences >= 3){
             return true;
         }
-        else if(portNameA.endsWith(".")){
+        else if(portNameA.endsWith(".") || portNameB.endsWith(".")){
             return true;
         }
         else{
@@ -27,8 +27,10 @@ public class Port {
     }
 
     public boolean isRed(){
-        if(portNameA.endsWith(".") && 
-            !(portNameA.contains("PORT"))){
+        if((portNameA.endsWith(".") && 
+            !(portNameA.contains("PORT"))) ||
+            (portNameB.endsWith(".") && 
+            !(portNameB.contains("PORT")))){
                 return true;
             }
         else{
