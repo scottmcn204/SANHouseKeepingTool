@@ -18,7 +18,7 @@ public class Port {
         if(differences >= 3){
             return true;
         }
-        else if(portNameA.substring(portNameA.length() - 1) == "."){
+        else if(portNameA.endsWith(".")){
             return true;
         }
         else{
@@ -27,7 +27,7 @@ public class Port {
     }
 
     public boolean isRed(){
-        if(portNameA.substring(portNameA.length() - 1) == "." && 
+        if(portNameA.endsWith(".") && 
             !(portNameA.contains("PORT"))){
                 return true;
             }
